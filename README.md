@@ -7,16 +7,10 @@
 https://paiza.cloud/ja/
 
 
-使用したコードはZIP化していますので解凍後、使用してください
+今回使用したコード等はZIP化していますので解凍後、使用してください
 
 
-　１　XSS.zip ：XSS体験
-　
- 
-  ２　CSRF.zip：CSRF体験
-  
-  
-  　３　SQLインジェクション.zip:ＳＱＬインジェクション体験
+　１　XSS.zip ：XSS体験　　　 ２　CSRF.zip：CSRF体験　　３　SQLインジェクション.zip:ＳＱＬインジェクション体験
   
   
 ■　Paiza CloudはPaiza株式会社の登録商標です。
