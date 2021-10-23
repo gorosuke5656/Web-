@@ -1,9 +1,9 @@
 # Web-security 体験
-〇　paiza cloudを使用したWebセキュリティ体験の資料及びコードです
+〇　Paiza cloudを使用したWebセキュリティ体験の資料及びコードです
 
-　　使用する際はpiza cloudへのアカウント登録が必要です（無料版で問題ありません）
+　　使用する際はPiza cloudへのアカウント登録が必要です（無料版で問題ありません）
 
-【paiza cloud】
+【Paiza cloud】
 https://paiza.cloud/ja/
 
 
@@ -16,3 +16,7 @@ https://paiza.cloud/ja/
   ２　CSRF.zip：CSRF体験
   
   
+  ３　SQLインジェクション.zip:ＳＱＬインジェクション体験
+  
+  
+■　Paiza CloudはPaiza株式会社の登録商標です。
