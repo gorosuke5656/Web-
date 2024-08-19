@@ -6,8 +6,8 @@
 https://paiza.cloud/ja/
 
 今回使用したコード等はZIP化していますので解凍後、使用してください<br>
-１　XSS.zip ：XSS体験<br>　
-２  CSRF.zip：CSRF体験<br>　
+１　XSS.zip ：XSS体験<br>
+２  CSRF.zip：CSRF体験<br>
 ３　SQLインジェクション.zip:　ＳＱＬインジェクション体験<br>
 ４：ワンライナーWebサーバ.zip : 模擬悪性サイトの起動要領<br>
   
