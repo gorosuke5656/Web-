@@ -19,6 +19,7 @@
 https://paiza.cloud/ja/
 
 今回使用したコード等はZIP化していますので解凍後、使用してください<br>
+scripts配下に以下を格納しています<br>
 １ XSS.zip ：XSS体験<br>
 ２ CSRF.zip：CSRF体験<br>
 ３ SQLインジェクション.zip:　ＳＱＬインジェクション体験<br>
