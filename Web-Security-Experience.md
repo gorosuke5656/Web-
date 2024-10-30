@@ -37,12 +37,12 @@ XSSの種類<br>
 ![Diagram](./images/xss-8.jpg)<br>
 ![Diagram](./images/xss-9.jpg)<br>
 ![Diagram](./images/xss-10.jpg)<br>
-
+![Diagram](./images/xss-11.jpg)<br>
 
 
 【異常な動作を確認します】（その１）<br>
 　自身のcookie情報を表示するスクリプトを入力し、実行します
-
+![Diagram](./images/xss-12.jpg)<br>
 
 
 
