@@ -34,7 +34,9 @@ XSSの種類<br>
 
 ##### サイトの動作確認<br>
 【通常の動作を確認します】<br>
-
+![Diagram](./images/xss-8.jpg)<br>
+![Diagram](./images/xss-9.jpg)<br>
+![Diagram](./images/xss-10.jpg)<br>
 
 
 
