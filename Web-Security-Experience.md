@@ -20,7 +20,7 @@ XSSの種類<br>
 ### XSSの体験<br>
 以下のような画面遷移で動作するWebアプリケーションを例とします<br>
 
- ![Diagram](./images/xss-.jpg)<br>
+ ![Diagram](./images/xss-4.jpg)<br>
 
 
 
