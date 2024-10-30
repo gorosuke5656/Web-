@@ -28,6 +28,9 @@ XSSの種類<br>
 ##### 事前準備<br>
 模擬悪性サイトをPythonを使用して起動しておきます<br>
 
+![Diagram](./images/xss-5.jpg)<br>
+![Diagram](./images/xss-6.jpg)<br>
+![Diagram](./images/xss-6.jpg)<br>
 
 ##### サイトの動作確認<br>
 【通常の動作を確認します】<br>
