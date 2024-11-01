@@ -48,10 +48,17 @@ XSSの種類<br>
 
 ### パケットとログを確認してみましょう！！<br>
 ![Diagram](./images/xss-22.jpg)<br>
+cyber chefを使用してパケットとログをデコードします！<br>
+https://gchq.github.io/CyberChef/<br>
+
 ![Diagram](./images/xss-23.jpg)<br>
+
 ![Diagram](./images/xss-24.jpg)<br>
+
 ![Diagram](./images/xss-25.jpg)<br>
+
 ![Diagram](./images/xss-26.jpg)<br>
+
 ![Diagram](./images/xss-27.jpg)<br>
 ![Diagram](./images/xss-28.jpg)<br>
 ![Diagram](./images/xss-29.jpg)<br>
