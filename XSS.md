@@ -50,4 +50,13 @@ XSSの種類<br>
 
 
 【パケットとログを確認しましょう！】<br>
+![Diagram](./images/xss-22.jpg)<br>
+![Diagram](./images/xss-23.jpg)<br>
+![Diagram](./images/xss-24.jpg)<br>
+![Diagram](./images/xss-25.jpg)<br>
+![Diagram](./images/xss-26.jpg)<br>
+![Diagram](./images/xss-27.jpg)<br>
+![Diagram](./images/xss-28.jpg)<br>
+![Diagram](./images/xss-29.jpg)<br>
+![Diagram](./images/xss-30.jpg)<br>
 
