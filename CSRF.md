@@ -16,18 +16,22 @@
 
 (正常な動作の確認）<br>
 　〇　脆弱性のあるサイト（login.php)にアクセスし、ユーザ/パスワードを入力します<br>
- 　　![Diagram](./images/CSRF-4.jpg)<br>
+ 　　
 　〇　トップページ（welcome.php）においてログアウトボタンを押します<br>
- 　　![Diagram](./images/CSRF-5.jpg)<br>
+ 　　
 　〇　ログアウト画面（logout.php)が表示され、ログアウトします<br>
- 　　![Diagram](./images/CSRF-6.jpg)<br>
-　　　![Diagram](./images/CSRF-7.jpg)<br>
+ 　　
+　　
    
 （異常な動作の確認）<br>
 　〇　脆弱性のあるサイト（login.php)にアクセスし、ユーザ/パスワードを入力します<br>
+ 　　![Diagram](./images/CSRF-4.jpg)<br>
 　〇　トップページ（welcome.php）において罠サイトボタンを押します<br>
+ 　　![Diagram](./images/CSRF-5.jpg)<br>
 　〇　罠サイト（trap.php）の強制ログアウトボタンを押します<br>
+ 　　![Diagram](./images/CSRF-6.jpg)<br>
 　〇　ログアウト画面（logout.php）が表示され、ログアウトします<br>
+ 　　　　![Diagram](./images/CSRF-7.jpg)<br>
 
 
 
