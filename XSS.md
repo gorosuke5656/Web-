@@ -20,14 +20,21 @@
 ## 【体験要領】
 
 ### 事前準備<br>
-模擬悪性サイトをPythonを使用して起動しておきます<br>
+異常な動作を確認します (その２）で使用する模擬悪性サイトをPythonを使用して起動しておきます<br>
 
 ![Diagram](./images/xss-5.jpg)<br>
 ![Diagram](./images/xss-6.jpg)<br>
 ![Diagram](./images/xss-6.jpg)<br>
 
 ### サイトの動作確認<br>
+
 #### 通常の動作を確認します <br>
+〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
+〇入力フォームに名前/URLを入力します<br>
+　　名前:gorosuke  URL：http://www.yahoo.co.jp)<br>
+〇入力した情報を確認し登録を実施します<br>
+〇登録された旨が表示されます<br>
+
 ![Diagram](./images/xss-8.jpg)<br>
 ![Diagram](./images/xss-9.jpg)<br>
 ![Diagram](./images/xss-10.jpg)<br>
@@ -35,13 +42,18 @@
 
 
 #### 異常な動作を確認します（その１）<br>
-　自身のcookie情報を表示するスクリプトを入力し、実行します
+〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
+〇スクリプトが実行可能かを確認します<br>
+〇”Cookie情報を表示するスクリプト”を入力し、実行します<br>
 ![Diagram](./images/xss-12.jpg)<br>
 
 
 
 #### 異常な動作を確認します (その２）<br>
-　　”模擬悪性サイトにCookie情報を転送するスクリプト”を入力し、実行します。
+
+〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
+〇”模擬悪性サイトにCookie情報情報を転送するスクリプト”を入力し、実行します<br>
+
 
 
 
