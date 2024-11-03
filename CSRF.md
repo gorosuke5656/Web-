@@ -30,16 +30,9 @@ https://www.ipa.go.jp/security/vuln/websecurity/csrf.html
 〇　ログアウト画面（logout.php）が表示され、ログアウトします<br>
  　　　　![Diagram](./images/CSRF-7.jpg)<br>
 
-[目次に戻る](./README.md) <br>
-
-
-
-
-
-
-
-
 
 ### パケットとログを確認してみましょう！！<br>
 ![Diagram](./images/CSRF-8.jpg)<br>
 ![Diagram](./images/CSRF-9.jpg)<br>
+
+[目次に戻る](./README.md) <br>
