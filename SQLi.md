@@ -43,121 +43,33 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO gorosuke5656@localhost IDENTIFIED BY '1qaz
 ![Diagram](./images/SQLi-6.jpg)<br>
 
 
-〇再度作成ユーザ(gorosuke5656)でログイン
+〇再度作成ユーザ(gorosuke5656)でログイン<br>
 
-root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u gorosuke5656 -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 6
-Server version: 5.7.28-0ubuntu0.18.04.4 (Ubuntu)
+root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u gorosuke5656 -p<br>
 
-Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+show databases; コマンドによりgorosuke5656 に権限が付与されていることがわかる<br>
 
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
+![Diagram](./images/SQLi-6.5.jpg)<br>
 
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql>
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-+--------------------+
-4 rows in set (0.00 sec)
-
-mysql>
-
-
-○データベースを作成
-#mysqlにログイン
-$ mysql -u gorosuke5656 -p
-
-#testuserという名前のデータベースを作成
-CREATE DATABASE testuser;
-
-#データベース”testuser”を指定
-mysql>use testuser;
-
+〇データベース(testuser)を作成<br>
+#mysqlにログイン<br>
+ $ mysql -u gorosuke5656 -p<br>
+#testuserという名前のデータベースを作成<br>
+ mysql>CREATE DATABASE testuser;<br>
+#データベース”testuser”を指定<br>
+ mysql>use testuser;<br>
 #usersというテーブルを作成し、カラムを「uid、passwd、mail」として作成
-CREATE TABLE testuser.users (uid varchar(20), passwd varchar(20), mail varchar(20));
+mysql>CREATE TABLE testuser.users (uid varchar(20), passwd varchar(20), mail varchar(20));<br>
 
 ![Diagram](./images/SQLi-6.jpg)<br>
 
-
-INSERT INTO testuser.users (uid , passwd , mail) VALUES ('gorosuke5656', 'password', 'gorosuke@gmail.com');
-INSERT INTO testuser.users (uid , passwd , mail) VALUES ('test', 'test', 'test@tttttt.com');
-INSERT INTO testuser.users (uid , passwd , mail) VALUES ('sqliuser', 'sqlipass', 'sqli@sqlidsada.com');
-
-〇select文でテーブル"users"を確認
-
-mysql> select * from testuser.users;
-+-----------+----------+--------------------+
-| uid       | passwd   | mail               |
-+-----------+----------+--------------------+
-| tokoroten | password | aasdawds@gmail.com |
-| test      | test     | test@tttttt.com    |
-| sqliuser  | sqlipass | sqli@sqlidsada.com |
-+-----------+----------+--------------------+
-3 rows in set (0.00 sec)
-
-mysql>
+〇テーブル(users)にデータを投入
+mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('gorosuke5656', 'password', 'gorosuke@gmail.com');<br>
+mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('test', 'test', 'test@tttttt.com');<br>
+mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('sqliuser', 'sqlipass', 'sqli@sqlidsada.com');<br>
 
 
-
-〇あらためてログインからテーブル確認まで確認
-
-$ mysql -u gorosuke5656 -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 12
-Server version: 5.7.28-0ubuntu0.18.04.4 (Ubuntu)
-
-Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql>
-
-
-
-
-
-
-Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> use testuser
-Reading table information for completion of table and column names
-You can turn off this feature to get a quicker startup with -A
-
-Database changed
-mysql> select * from testuser.users;
-+--------------+----------+--------------------+
-| uid          | passwd   | mail               |
-+--------------+----------+--------------------+
-| gorosuke5656 | password | gorosuke@gmail.com |
-| test         | test     | test@tttttt.com    |
-| sqliuser     | sqlipass | sqli@sqlidsada.com |
-+--------------+----------+--------------------+
-3 rows in set (0.01 sec)
-
-mysql>
-
+![Diagram](./images/SQLi-8.jpg)<br>
 
 
 (正常な動作の確認）<br>
