@@ -18,7 +18,7 @@ sudo su でrootになっておく<br>
 
 
 〇MYSQLにルートでログイン<br>
-　　root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u root
+　　root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u root<br>
 　　　　　パスワードはなし（Enterを押す）<br>
 
 〇ユーザを登録（パスワード設定あり）します<br>
