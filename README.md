@@ -21,7 +21,7 @@
 使用する際はPaiza cloudへのアカウント登録が必要です（無料版で問題ありません）<br>
 
 【Paiza cloud】<br>
-https://paiza.cloud/ja/
+https://paiza.cloud/ja/<br>
 
 今回使用したコード等はZIP化していますので解凍後、使用してください<br>
 scripts配下に以下を格納しています<br>
