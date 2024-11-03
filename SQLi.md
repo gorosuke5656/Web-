@@ -49,7 +49,7 @@ root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u gorosuke5656 -p<br>
 
 show databases; コマンドによりgorosuke5656 に権限が付与されていることがわかる<br>
 
-![Diagram](./images/SQLi-6.5.jpg)<br>
+![Diagram](./images/SQLi-6(1).jpg)<br>
 
 〇データベース(testuser)を作成<br>
 #mysqlにログイン<br>
