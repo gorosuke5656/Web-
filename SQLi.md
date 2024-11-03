@@ -32,7 +32,7 @@ sudo su でrootになっておく<br>
 
 〇データベースを確認<br>
 
- ![Diagram](./images/SQLi-5.jpg)<br>
+ ![Diagram](./images/SQli-5.jpg)<br>
 
 〇ログアウトして、再度rootでログイン後、作成ユーザに権限を持たせる<br>
 
