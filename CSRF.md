@@ -37,4 +37,5 @@
 
 
 ### パケットとログを確認してみましょう！！<br>
-
+![Diagram](./images/CSRF-8.jpg)<br>
+![Diagram](./images/CSRF-9.jpg)<br>
