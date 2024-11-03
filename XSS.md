@@ -34,7 +34,7 @@
 #### 通常の動作を確認します <br>
 〇自身のホスト（ブラウザ）からXSS.phpにアクセスします<br>
 〇入力フォームに名前/URLを入力します<br>
-　　名前:gorosuke  URL：http://www.yahoo.co.jp)<br>
+　　名前:gorosuke  URL：http://www.yahoo.co.jp<br>
 〇入力した情報を確認し登録を実施します<br>
 〇登録された旨が表示されます<br>
 
