@@ -63,7 +63,7 @@ mysql>CREATE TABLE testuser.users (uid varchar(20), passwd varchar(20), mail var
 
 ![Diagram](./images/SQLi-6.jpg)<br>
 
-〇テーブル(users)にデータを投入
+〇テーブル(users)にデータを投入<br>
 mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('gorosuke5656', 'password', 'gorosuke@gmail.com');<br>
 mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('test', 'test', 'test@tttttt.com');<br>
 mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('sqliuser', 'sqlipass', 'sqli@sqlidsada.com');<br>
