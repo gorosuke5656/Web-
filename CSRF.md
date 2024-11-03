@@ -32,6 +32,7 @@ https://www.ipa.go.jp/security/vuln/websecurity/csrf.html
 
 
 ### パケットとログを確認してみましょう！！<br>
+〇　Webサーバのアクセスログからreferrerに注目します！<br>
 ![Diagram](./images/CSRF-8.jpg)<br>
 ![Diagram](./images/CSRF-9.jpg)<br>
 
