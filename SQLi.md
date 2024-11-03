@@ -9,8 +9,8 @@
 
  ![Diagram](./images/SQLi-3.jpg)<br>
 
-####事前準備
-#####　①データベースの作成<br>
+#### 事前準備<br>
+##### データベースの作成<br>
 
 PaizaCloud上にあるDBサーバー（MYSQL）にログインし、以下の作業を実施<br>
 PaizaCloudのWeb画面に左側にあるコンソールを起動<br>
@@ -70,6 +70,9 @@ mysql>INSERT INTO testuser.users (uid , passwd , mail) VALUES ('sqliuser', 'sqli
 
 
 ![Diagram](./images/SQLi-8.jpg)<br>
+
+
+##### ＨＴＭＬファイル及びPHPスクリプトをアップロード<br>
 
 
 (正常な動作の確認）<br>
