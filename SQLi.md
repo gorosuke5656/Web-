@@ -1,13 +1,13 @@
 # SQLインジェクションとはとは？？<br>
  ![Diagram](./images/SQLi-1.jpg)<br>
-
+![Diagram](./images/SQLi-2.jpg)<br>
 
 ## 【体験要領】
 
 ### サイト構成<br>
 以下のようなサイト構成を例として実習します<br>
 
-
+ ![Diagram](./images/SQLi-3.jpg)<br>
 
 ####事前準備
 #####　①データベースの作成<br>
@@ -21,52 +21,26 @@ sudo su でrootになっておく<br>
 　　root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u root
 　　　　　パスワードはなし（Enterを押す）<br>
 
-〇ユーザを登録（パスワード設定あり）します。
-　　mysql> CREATE USER gorosuke5656 IDENTIFIED BY '1qaz2wsx3edc$';
-　　　　　Query OK, 0 rows affected (0.01 sec)
+〇ユーザを登録（パスワード設定あり）します<br>
+　　mysql> CREATE USER gorosuke5656 IDENTIFIED BY '1qaz2wsx3edc$';<br>
 　
+〇ログアウトして先ほど登録したユーザログインを実施します<br>
+　　root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u gorosuke5656 -p<br>
+　　Enter password:1qaz2wsx3edc$(表示されない）<br>
 
-〇ログアウトして先ほど登録したユーザログインを実施します。
-　　root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u gorosuke5656 -p
-　　Enter password:1qaz2wsx3edc$(表示されない）
-　　Welcome to the MySQL monitor.  Commands end with ; or \g.
-　　Your MySQL connection id is 4
-　　　・
-　　mysql>
+  ![Diagram](./images/SQLi-4.jpg)<br>
 
-〇データベースを確認
+〇データベースを確認<br>
 
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-+--------------------+
-1 row in set (0.01 sec)
+ ![Diagram](./images/SQLi-5.jpg)<br>
 
-mysql>
+〇ログアウトして、再度rootでログイン後、作成ユーザに権限を持たせる<br>
 
+root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u root -p<br>
+Enter password:→　
+mysql> GRANT ALL PRIVILEGES ON *.* TO gorosuke5656@localhost IDENTIFIED BY '1qaz2wsx3edc$';<br>
 
-〇ログアウトして、再度rootでログイン後、作成ユーザに権限を持たせる
-
-root@gorosuke-genki-inu-1:/home/ubuntu# mysql -u root -p
-Enter password:→　”Ｅnterを押す”
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.7.28-0ubuntu0.18.04.4 (Ubuntu)
-
-Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> GRANT ALL PRIVILEGES ON *.* TO gorosuke5656@localhost IDENTIFIED BY '1qaz2wsx3edc$';
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
-mysql>
+![Diagram](./images/SQLi-6.jpg)<br>
 
 
 〇再度作成ユーザ(gorosuke5656)でログイン
@@ -112,6 +86,8 @@ mysql>use testuser;
 
 #usersというテーブルを作成し、カラムを「uid、passwd、mail」として作成
 CREATE TABLE testuser.users (uid varchar(20), passwd varchar(20), mail varchar(20));
+
+![Diagram](./images/SQLi-6.jpg)<br>
 
 
 INSERT INTO testuser.users (uid , passwd , mail) VALUES ('gorosuke5656', 'password', 'gorosuke@gmail.com');
