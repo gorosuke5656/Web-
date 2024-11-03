@@ -1,6 +1,8 @@
 # XSSとは？？<br>
  ![Diagram](./images/xss-1.jpg)<br>
 
+ https://www.ipa.go.jp/security/vuln/websecurity/cross-site-scripting.html
+
 ## XSSの種類<br>
  ### 反射型XSS
 　ユーザが送信するHTTPリクエストパラメータをＨＴＴＰレスポンスとしてHTMLに表示してしまうもの<br>
