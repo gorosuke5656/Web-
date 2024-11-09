@@ -33,8 +33,10 @@ https://www.ipa.go.jp/security/vuln/websecurity/csrf.html
 
 
 ### パケットとログを確認してみましょう！！<br>
-〇　Webサーバのアクセスログからreferrerに注目します！<br>
+〇　Webサーバのアクセスログからrefererに注目します！<br>
 ![Diagram](./images/CSRF-8.jpg)<br>
+　　refererを確認することにより正常なアクセスかそうでない（異常）なアクセスかを確認できます<br>
+  　【おさらい】refererとは？？
 ![Diagram](./images/CSRF-9.jpg)<br>
 
 [目次に戻る](./README.md) <br>
