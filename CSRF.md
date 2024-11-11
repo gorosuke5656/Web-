@@ -1,5 +1,5 @@
 # CSRFとは？？<br>
- ![Diagram](./images/CSRF-1.jpg)<br>
+ ![Diagram](./images/CSRF/CSRF-1.jpg)<br>
 
 【安全なウェブサイトの作り方 - 1.5 クロスサイト・リクエストフォージェリ】<br>
 https://www.ipa.go.jp/security/vuln/websecurity/csrf.html
