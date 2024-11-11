@@ -1,5 +1,5 @@
 # XSSとは？？<br>
- ![Diagram](./images/xss-1.jpg)<br>
+ ![Diagram](./images/XSS/xss-1.jpg)<br>
 
 【安全なウェブサイトの作り方 - 1.5 クロスサイト・スクリプティング】<br>
  https://www.ipa.go.jp/security/vuln/websecurity/cross-site-scripting.html
@@ -12,12 +12,12 @@
 　（反射型のようなパラメータでなく、そのページを閲覧しただけで、任意のスクリプトが実行。。）<br>
 
  #### 反射型XSSのイメージ<br>
- ![Diagram](./images/xss-3.jpg)<br>
+ ![Diagram](./images/XSS/xss-3.jpg)<br>
 
 ## XSSの体験<br>
 以下のような画面遷移で動作するWebアプリケーションを例とします<br>
 
- ![Diagram](./images/xss-4.jpg)<br>
+ ![Diagram](./images/XSS/xss-4.jpg)<br>
 
 
 ## 【体験要領】
@@ -25,8 +25,8 @@
 ### 事前準備<br>
 異常な動作を確認します (その２）で使用する模擬悪性サイトをPythonを使用して起動しておきます<br>
 
-![Diagram](./images/xss-5.jpg)<br>
-![Diagram](./images/xss-6.jpg)<br>
+![Diagram](./images/XSS/xss-5.jpg)<br>
+![Diagram](./images/XSS/xss-6.jpg)<br>
 ![Diagram](./images/xss-6.jpg)<br>
 
 ### サイトの動作確認<br>
