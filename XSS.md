@@ -27,7 +27,6 @@
 
 ![Diagram](./images/XSS/xss-5.jpg)<br>
 ![Diagram](./images/XSS/xss-6.jpg)<br>
-![Diagram](./images/XSS/xss-6.jpg)<br>
 
 ### サイトの動作確認<br>
 
